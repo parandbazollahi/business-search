@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Getting Started with Create Business Search using the Yelp Fusion API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+On the first page, you can search for businesses in Naperville.
+When you select a search, it will take you to a second page where you can see details about the business.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start ` in Terminal
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It will Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You will also see any line errors in the console. For example(Access to XMLHttpRequest has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.)
 
-### `npm test`
+### `Fix CORS policy in Chrome`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The CORS issue should be fixed in the backend. Temporary workaround uses this option.
 
-### `npm run build`
+Go to C:\Program Files (x86)\Google\Chrome\Application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Open command prompt
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Execute the command: chrome.exe --disable-web-security --user-data-dir="c:/ChromeDevSession"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Using the above option, you can able to open new chrome without security. this chrome will not throw any cors issue.
 
-### `npm run eject`
+## Website overview
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![FirstPage](https://user-images.githubusercontent.com/47065252/118759994-a53ecb00-b837-11eb-8a0b-ec7e1dd0506e.PNG)
+![SearchPage](https://user-images.githubusercontent.com/47065252/118760013-aec83300-b837-11eb-8d51-fc22b591bd27.PNG)
+![Details](https://user-images.githubusercontent.com/47065252/118760016-aff96000-b837-11eb-8fee-dc52e7558af5.PNG)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
